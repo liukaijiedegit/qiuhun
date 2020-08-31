@@ -1,0 +1,1198 @@
+body, div, ul, li, p, h2, h3, h6, a {
+    margin: 0;
+    padding: 0;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #ff0000;
+}
+
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font: 22px/2em "方正兰亭纤黑简体", Helvetica, Arial, sans-serif;
+}
+
+/*-----------------------音乐-------------------------*/
+.music {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    z-index: 50;
+    width: 30px;
+    height: 30px;
+    background: url("data:image/png")no-repeat;
+    background-size: 100% 100%;
+}
+
+.bounce {
+    -webkit-animation: animations 2s infinite linear;
+    animation: animations 2s infinite linear;
+}
+
+@-webkit-keyframes animations {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animations {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/*-----------------------箭头-------------------------*/
+.icon-up {
+    position: absolute;
+    left: 50%;
+    bottom: 4%;
+    z-index: 999;
+    margin-left: -10px;
+    height: auto;
+    width: 20px;
+}
+
+.up-img {
+    -webkit-animation: moveToBottom ease 1.5s both infinite;
+    animation: moveToBottom ease 1.5s both infinite;
+}
+
+@-webkit-keyframes moveToBottom {
+    from {
+    }
+    to {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+}
+
+@keyframes moveToBottom {
+    from {
+    }
+    to {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+}
+
+#main {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -320px;
+    width: 640px;
+    height: 960px;
+    overflow: hidden;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    perspective: 800px;
+     /*background: url(../images/psb.jpg);*/
+      /*background-size: 100% 100%*/
+}
+
+.zIndex {
+    z-index: 10;
+}
+.slide > li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+      
+   
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+.red{
+  color:red;  
+}
+.lanse{
+    color:#db3839;
+}
+.slide .a1{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/liangren.jpg);
+    background-size: 100% 100%
+}
+/* .a2 .tp1{
+       width: 50%;
+    height: 100%;
+    background: url(../images/tj.jpg);
+    background-size: 100% 100% 
+} */
+
+.slide .a2{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/hej.jpg);
+    background-size: 100% 100%
+}
+.slide .a3{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/jh3.jpg);
+    background-size: 100% 100%
+}
+.slide .a4{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bj01.jpg);
+    background-size: 100% 100%
+}
+.slide .a5 .content,.slide .a4 .content{
+     width: 100%;
+    height: 98%;
+    margin:0 auto;
+}
+.slide .a5{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/er2.jpg);
+    background-size: 100% 100%
+}
+.slide .a6{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/liangren.jpg);
+    background-size: 100% 100%
+}
+.slide .a2 .content{
+    color:#FFF
+}
+.a1, .a2, .a3, .a4, .a5, .a6 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-animation: pulse 1s ease 0s both;
+    animation: pulse 1s ease 0s both;
+}
+.slide .content{
+    font-size: 24px;
+	width: 80%;
+    margin: 50px auto;
+    color:rgb(0 196 255);
+    text-align:center
+
+}
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(0.8, 0.8, 0.8);
+        transform: scale3d(0.8, 0.8, 0.8);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.4, 1.4, 1.4);
+        transform: scale3d(1.4, 1.4, 1.4);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(0.8, 0.8, 0.8);
+        transform: scale3d(0.8, 0.8, 0.8);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.4, 1.4, 1.4);
+        transform: scale3d(1.4, 1.4, 1.4);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/*-------------------第一张----------------------*/
+.a1-content {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 40%;
+    margin: -170px 0 0 -170px;
+    border-radius: 50%;
+    text-align: center;
+    border: 20px solid #fff;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 10px 5px #ccc;
+}
+
+.a1-content img {
+    -webkit-animation: animations 12s infinite linear;
+    animation: animations 12s infinite linear;
+}
+
+
+/*-------------------第二张 上面----------------------*/
+.a2-top {
+    position: relative;
+    top: -40%;
+    height: 30%;
+}
+
+#a2 .a2-top {
+    -webkit-animation-name: myMove;
+    animation-name: myMove;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+#a2 .a2-top :nth-child(1) {
+    -webkit-animation-name: swing;
+    animation-name: swing;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes myMove {
+    25% {
+        top: -20%;
+    }
+    50%, 100% {
+        top: 0;
+    }
+    75% {
+        top: 10%;
+    }
+}
+
+@keyframes myMove {
+    25% {
+        top: -20%;
+    }
+    50%, 100% {
+        top: 0;
+    }
+    75% {
+        top: 10%;
+    }
+}
+
+@-webkit-keyframes swing {
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 30deg);
+        transform: rotate3d(0, 0, 1, 30deg);
+        opacity: 0.1;
+    }
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -30deg);
+        transform: rotate3d(0, 0, 1, -30deg);
+        opacity: 0.8;
+    }
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+        opacity: 0.3;
+    }
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -15deg);
+        transform: rotate3d(0, 0, 1, -15deg);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+        opacity: 0.8;
+    }
+}
+
+@keyframes swing {
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 30deg);
+        transform: rotate3d(0, 0, 1, 30deg);
+        opacity: 0.1;
+    }
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -30deg);
+        transform: rotate3d(0, 0, 1, -30deg);
+        opacity: 0.8;
+    }
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+        opacity: 0.3;
+    }
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -15deg);
+        transform: rotate3d(0, 0, 1, -15deg);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+        opacity: 0.8;
+    }
+}
+
+.a2-top p {
+    padding-top: 10%;
+    font-size: 70px;
+    text-align: center;
+}
+
+.a2-top img {
+    position: absolute;
+}
+
+#a2 .a2-top img {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+#a2 .a2-top img:nth-of-type(1) {
+    top: 0;
+}
+
+#a2 .a2-top img:nth-of-type(2) {
+    top: 0;
+    right: 0;
+}
+
+#a2 .a2-top img:nth-of-type(3) {
+    left: 50%;
+    top: 55%;
+    width: 524px;
+    height: 124px;
+    margin-left: -262px;
+}
+
+/*-------------------第二张下面----------------------*/
+.a2-bot {
+    position: relative;
+    height: 70%;
+}
+
+.a2-bot img {
+    position: absolute;
+}
+
+.a2-bot > img:nth-of-type(1) {
+    top: 20%;
+    left: 50%;
+    margin-left: -99px;
+    width: 198px;
+    height: 192px;
+    -webkit-animation-name: myBg;
+    animation-name: myBg;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes myBg {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes myBg {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*出现前*/
+#a2 .a2-bot div img {
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
+.a2-bot div img {
+    left: -60%;
+}
+
+#a2 .a2-bot div {
+    position: relative;
+    height: 100%;
+}
+
+/*出现后*/
+#a2 .a2-bot div img:nth-of-type(1) {
+    top: 16%;
+    left: 0;
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    -webkit-transition-delay: 2s;
+    transition-delay: 2s;
+}
+
+#a2 .a2-bot div img:nth-of-type(2) {
+    top: 48%;
+    left: 8%;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition-delay: 3s;
+    transition-delay: 3s;
+}
+
+#a2 .a2-bot div img:nth-of-type(3) {
+    top: 70%;
+    left: 20%;
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    -webkit-transition-delay: 4s;
+    transition-delay: 4s;
+}
+
+#a2 .a2-bot div img:nth-of-type(4) {
+    top: 65%;
+    left: 63%;
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    -webkit-transition-delay: 4s;
+    transition-delay: 4s;
+}
+
+#a2 .a2-bot div img:nth-of-type(5) {
+    top: 45%;
+    left: 80%;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition-delay: 3s;
+    transition-delay: 3s;
+}
+
+#a2 .a2-bot div img:nth-of-type(6) {
+    top: 20%;
+    left: 84%;
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    -webkit-transition-delay: 2s;
+    transition-delay: 2s;
+}
+
+#a2 .a2-bot div img:nth-of-type(7) {
+    left: 74%;
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+}
+
+.a2-bot h2 {
+    position: absolute;
+    top: 29%;
+    left: 39%;
+    font-size: 34px;
+    letter-spacing: 16px;
+}
+
+.a2-bot p {
+    position: absolute;
+    top: 56%;
+    left: 34%;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+/*-------------------第三张----------------------*/
+.a3-top {
+    width: 100%;
+    height: 30%;
+}
+
+.a3-top img {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    margin-left: -85px;
+    height: auto;
+    width: 170px;
+}
+
+.a3-bot {
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+
+.a3-Left img {
+    position: absolute;
+    left: 20%;
+}
+
+.a3-Left img:nth-child(1) {
+    top: 6%;
+}
+
+.a3-Left img:nth-child(2) {
+    top: 57%;
+}
+
+.a3-Right {
+    height: 100%;
+}
+
+.a3-RightTop {
+    position: absolute;
+    top: 3%;
+    left: 38%;
+    width: 100%;
+    height: 50%;
+}
+
+.a3-Right p {
+    position: absolute;
+    left: -150%;
+    line-height: 42px;
+    font-size: 24px;
+}
+
+.a3-RightBot {
+    position: absolute;
+    top: 54%;
+    left: 38%;
+    width: 100%;
+    height: 33%;
+}
+
+#a3 .a3-Right p {
+    -webkit-animation-name: a3-Right;
+    animation-name: a3-Right;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes a3-Right {
+    25% {
+        left: -75%;
+    }
+    50%, 100% {
+        left: 0;
+    }
+    75% {
+        left: 75%;
+    }
+}
+
+@-webkit-keyframes a3-Right {
+    25% {
+        left: -75%;
+    }
+    50%, 100% {
+        left: 0;
+    }
+    75% {
+        left: 75%;
+    }
+}
+
+#a3 .a3-Right .a3-RightTop p:nth-of-type(1) {
+    top: 0;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+#a3 .a3-Right .a3-RightTop p:nth-of-type(2) {
+    top: 13%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+#a3 .a3-Right .a3-RightTop p:nth-of-type(3) {
+    top: 26%;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+#a3 .a3-Right .a3-RightTop p:nth-of-type(4) {
+    top: 39%;
+    -webkit-animation-delay: 0.8s;
+    transition-delay: 0.8s;
+}
+
+#a3 .a3-Right .a3-RightTop p:nth-of-type(5) {
+    top: 52%;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+#a3 .a3-Right .a3-RightTop p:nth-of-type(6) {
+    top: 65%;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+#a3 .a3-Right .a3-RightTop p:nth-of-type(7) {
+    top: 78%;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+#a3 .a3-Right .a3-RightBot p:nth-of-type(1) {
+    top: 0;
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+#a3 .a3-Right .a3-RightBot p:nth-of-type(2) {
+    top: 19%;
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+
+#a3 .a3-Right .a3-RightBot p:nth-of-type(3) {
+    top: 38%;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+#a3 .a3-Right .a3-RightBot p:nth-of-type(4) {
+    top: 58%;
+    -webkit-animation-delay: 2.2s;
+    animation-delay: 2.2s;
+}
+
+#a3 .a3-Right .a3-RightBot p:nth-of-type(5) {
+    top: 77%;
+    -webkit-animation-delay: 2.4s;
+    animation-delay: 2.4s;
+}
+
+/*-------------------第四张----------------------*/
+.a4 .a4-top {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.a4-top h2 {
+    line-height: 80px;
+    font-size: 60px;
+}
+
+.a4-top span {
+    font-size: 36px;
+}
+
+.a4-content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -217px;
+    width: 434px;
+    height: 396px;
+    background: url("../images/a4-content.png") no-repeat;
+}
+
+.a4-content div {
+    position: absolute;
+    top: 31%;
+    left: 29%;
+    width: 170px;
+    height: 170px;
+    border: 2px dashed #ccc;
+    border-radius: 50%;
+    -webkit-animation: a4-animations 1s infinite linear;
+    animation: a4-animations 1s infinite linear;
+}
+
+@-webkit-keyframes a4-animations {
+    0% {
+        -webkit-transform: rotate(0deg);
+        border-color: #ccc;
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+        border-color: #888;
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        border-color: #000;
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+        border-color: #888;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        border-color: #ccc;
+    }
+}
+
+@keyframes a4-animations {
+    0% {
+        -webkit-transform: rotate(0deg);
+        border-color: #ccc;
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+        border-color: #888;
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        border-color: #000;
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+        border-color: #888;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        border-color: #ccc;
+    }
+}
+
+.a4 img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -36px 0 0 -31px;
+    width: 50px;
+    height: 50px;
+    -webkit-transform: rotate(0deg); /*rotate 旋转*/
+}
+
+#a4 img:nth-child(2) {
+    left: 50%;
+    top: 24%;
+}
+
+#a4 img:nth-child(3) {
+    left: 25%;
+    top: 44%;
+}
+
+#a4 img:nth-child(4) {
+    left: 29%;
+    top: 79%;
+}
+
+#a4 img:nth-child(5) {
+    left: 73%;
+    top: 79%;
+}
+
+#a4 img:nth-child(6) {
+    left: 77%;
+    top: 43%;
+}
+
+#a4 img {
+    -webkit-transform: rotate(720deg);
+    -webkit-transition: 1s;
+}
+
+.a4-bot {
+    position: relative;
+    top: 64%;
+    left: 50%;
+    margin-left: -40%;
+    width: 80%;
+    height: 28%;
+}
+
+.a4-bot p {
+    position: absolute;
+    left: 300%;
+    top: 50%;
+    width: 100%;
+}
+
+#a4 .a4-bot p {
+    -webkit-animation-name: a4-Bot;
+    animation-name: a4-Bot;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes a4-Bot {
+    25% {
+        left: 150%;
+    }
+    50%, 100% {
+        left: 0;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    75% {
+        left: -150%;
+    }
+}
+
+@keyframes a4-Bot {
+    25% {
+        left: 150%;
+    }
+    50%, 100% {
+        left: 0;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    75% {
+        left: -150%;
+    }
+}
+
+#a4 .a4-bot p:nth-of-type(1) {
+    top: 0;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+#a4 .a4-bot p:nth-of-type(2) {
+    top: 26%;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+#a4 .a4-bot p:nth-of-type(3) {
+    top: 51%;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+#a4 .a4-bot p:nth-of-type(4) {
+    top: 76%;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+.a4-bot p span {
+    line-height: 30px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.a4-bot p span:nth-child(1) {
+    position: relative;
+    top: -6px;
+    margin-bottom: 44px;
+    color: red;
+}
+
+.a4-bot p span:nth-child(2) {
+    position: absolute;
+}
+
+/*-------------------第五张----------------------*/
+.a5-top {
+    margin: 5% 0;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.a5-top h2 {
+    line-height: 66px;
+    font-size: 56px;
+}
+
+.a5-top p {
+    line-height: 50px;
+    font-size: 35px;
+}
+
+/*下面左边*/
+.a5-bot {
+    position: relative;
+    left: 50%;
+    top: 0;
+    margin-left: -40%;
+    width: 80%;
+    height: 70%;
+}
+
+.a5-botLeft {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+}
+
+.a5-botLeft li {
+    position: relative;
+    top: 2px;
+    height: 38%;
+}
+
+.a5-botLeft li:nth-child(2) {
+    top: 11%;
+}
+
+.a5-botLeft li img {
+    position: absolute;
+    top: 0;
+    -webkit-animation: myTop-Bot 5s linear 2s 2 both;
+    animation: myTop-Bot 5s linear 2s 2 both;
+}
+
+@-webkit-keyframes myTop-Bot {
+    25%, 75% {
+        top: 50%;
+    }
+    50% {
+        top: 100%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes myTop-Bot {
+    25%, 75% {
+        top: 50%;
+    }
+    50% {
+        top: 100%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+/*下面右边*/
+.a5-botRight {
+    position: absolute;
+    left: 10%;
+    width: 90%;
+    height: 100%;
+}
+
+.a5-botRight li {
+    position: relative;
+    height: 48%;
+}
+
+.a5-botRight li h3 {
+    line-height: 40px;
+    font-size: 26px;
+    color: #db3839;
+}
+
+.a5-botRight li p {
+    position: absolute;
+    top: 300%;
+    font-size: 20px;
+}
+
+#a5 .a5-botRight li p {
+    -webkit-animation: myBot 6s linear both;
+}
+
+@-webkit-keyframes myBot {
+    0% {
+        -webkit-transform: translate(0, 400%);
+    }
+    25% {
+        -webkit-transform: translate(0, 300%);
+    }
+    50% {
+        -webkit-transform: translate(0, 200%);
+    }
+    75% {
+        -webkit-transform: translate(0, 100%);
+    }
+    100% {
+        -webkit-transform: translate(0, 0%);
+    }
+}
+
+@keyframes myBot {
+    0% {
+        -webkit-transform: translate(0, 400%);
+    }
+    25% {
+        -webkit-transform: translate(0, 300%);
+    }
+    50% {
+        -webkit-transform: translate(0, 200%);
+    }
+    75% {
+        -webkit-transform: translate(0, 100%);
+    }
+    100% {
+        -webkit-transform: translate(0, 0%);
+    }
+}
+
+#a5 .a5-botRight li p:nth-of-type(4) {
+    -webkit-animation: hello 6s linear both;
+}
+
+@-webkit-keyframes hello {
+    0% {
+        -webkit-transform: translate(0, 200%);
+        transform: translate(0, 200%);
+    }
+    50% {
+        -webkit-transform: translate(0, 100%);
+        transform: translate(0, 100%);
+    }
+    100% {
+        -webkit-transform: translate(0, 0%);
+        transform: translate(0, 0%);
+    }
+}
+
+@keyframes hello {
+    0% {
+        -webkit-transform: translate(0, 200%);
+        transform: translate(0, 200%);
+    }
+    50% {
+        -webkit-transform: translate(0, 100%);
+        transform: translate(0, 100%);
+    }
+    100% {
+        -webkit-transform: translate(0, 0%);
+        transform: translate(0, 0%);
+    }
+}
+
+#a5 .a5-botRight li p:nth-of-type(1) {
+    color: rgb(99, 219, 88);
+    top: 12%;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#a5 .a5-botRight li p:nth-of-type(2) {
+    top: 24%;
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+}
+
+#a5 .a5-botRight li p:nth-of-type(3) {
+    top: 36%;
+    -webkit-transition-delay: 1.5s;
+    transition-delay: 1.5s;
+}
+
+#a5 .a5-botRight li p:nth-of-type(4) {
+    top: 48%;
+    line-height: 40px;
+    -webkit-transition-delay: 4s;
+    transition-delay: 4s;
+}
+
+#a5 .a5-botRight li p:nth-of-type(5) {
+    top: 72%;
+    -webkit-transition-delay: 5s;
+    transition-delay: 5s;
+}
+
+/*-------------------第六张----------------------*/
+.a6-content {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -145px;
+    width: 344px;
+    height: 344px;
+}
+
+.a6 p {
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    margin-left: -180px;
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
